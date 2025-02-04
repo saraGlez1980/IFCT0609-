@@ -16,12 +16,13 @@ int main() {
 	} 
 	
 	/* Método de búrbuja */
-	for (i = 0; i < (total - 1); i++) { 
-		for (j = i + 1; j < total; j++) { 
+	for (i = 0; i < (total - 1); i++) // va a comparar todos los elementos del vector
+    { 
+		for (j = i + 1; j < total; j++) { //compara el elemento i con el resto
 			if (vNumeros[j] < vNumeros[i]) { 
 				temp = vNumeros[j]; 
 				vNumeros[j] = vNumeros[i]; 
-				vNumeros[i] = temp; 
+				vNumeros[i] = temp; // si es menor, intercambia
 			} 
 		} 
 	} 
